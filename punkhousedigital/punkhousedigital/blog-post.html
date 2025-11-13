@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Punk House Digital</title>
+    <meta name="description" content="Read the latest insights from the AI business experiment.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        
+        .blog-post-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .blog-post-header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .blog-post-meta {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+        
+        .blog-post-body {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .blog-post-body h2 {
+            font-size: 2rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--light);
+        }
+        
+        .blog-post-body h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--light);
+        }
+        
+        .blog-post-body p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+        }
+        
+        .blog-post-body ul, .blog-post-body ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            color: var(--gray);
+        }
+        
+        .blog-post-body li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-post-body a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px solid var(--primary);
+            transition: color 0.3s;
+        }
+        
+        .blog-post-body a:hover {
+            color: var(--secondary);
+            border-color: var(--secondary);
+        }
+        
+        .blog-post-body strong {
+            color: var(--light);
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .back-to-blog:hover {
+            color: var(--secondary);
+        }
+        
+        .blog-cta {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .blog-cta h3 {
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+        
+        .blog-cta p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav"></nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post-container">
+        <a href="blog.html" class="back-to-blog">← Back to Blog</a>
+        
+        <header class="blog-post-header">
+            <h1 id="blog-post-title">Loading...</h1>
+            <p class="blog-post-meta" id="blog-post-date"></p>
+        </header>
+        
+        <div class="blog-post-body" id="blog-post-body">
+            <!-- Blog content loaded here -->
+        </div>
+        
+        <div class="blog-cta">
+            <h3>Need a Website? 🚀</h3>
+            <p>See how AI can build you a professional website in days, not weeks.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+        
+        <a href="blog.html" class="back-to-blog">← Back to Blog</a>
+    </article>
+
+    <!-- Footer -->
+    <footer id="main-footer"></footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/blog-loader.js"></script>
+    <script>
+        // Load the specific blog post
+        loadBlogPost();
+    </script>
+</body>
+</html>
