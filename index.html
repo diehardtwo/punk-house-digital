@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Punk House Digital | AI-Powered Web Design &amp; SEO</title>
-<meta name="description" content="Building websites with AI. Documenting the experiment of running a web design business where AI does most of the work.">
-<link rel="canonical" href="https://punkhousedigital.co.uk/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="Punk House Digital">
-<meta property="og:title" content="Punk House Digital | AI-Powered Web Design &amp; SEO">
-<meta property="og:description" content="Building websites with AI. Documenting the experiment of running a web design business where AI does most of the work.">
-<meta property="og:url" content="https://punkhousedigital.co.uk/">
-<meta name="theme-color" content="#0e0e0e">
-<style>*{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0e0e0e;--text:#f5f1e8;--pink:#ff2e88;--yellow:#ffe14d;--muted:#bdb7a8;--line:#2a2a2a}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font:1.05rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
-a{color:var(--yellow)}a:hover{color:var(--pink)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
-header.top{border-bottom:3px solid var(--pink);padding:1rem 0}
-header.top .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between}
-.logo{font:900 1.15rem/1 Impact,"Arial Black",system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--text);text-decoration:none}
-.logo span{color:var(--pink)}
-nav a{color:var(--text);text-decoration:none;margin-right:1.1rem;font-weight:600}
-nav a:last-child{margin-right:0}nav a:hover,nav a[aria-current]{color:var(--pink)}
-h1,h2,h3{font-family:Impact,"Arial Black",system-ui,sans-serif;text-transform:uppercase;line-height:1.05;letter-spacing:.02em}
-h1{font-size:clamp(2.4rem,9vw,4rem);margin:.5rem 0 1rem}
-h2{font-size:1.8rem;margin:0 0 .75rem;color:var(--yellow)}
-h3{font-size:1.25rem;margin-bottom:.4rem}
-section{padding:2.5rem 0}
-.hero{padding:3rem 0 2.5rem}
-.hero h1 em{color:var(--pink);font-style:normal}
-.lead{font-size:1.2rem;color:var(--muted);max-width:34rem}
-.btn{display:inline-block;margin:1.25rem .75rem 0 0;padding:.7rem 1.2rem;background:var(--pink);color:#0e0e0e;font-weight:800;text-decoration:none;text-transform:uppercase;border:3px solid var(--text);box-shadow:5px 5px 0 var(--yellow);transform:rotate(-1deg)}
-.btn.alt{background:var(--yellow)}.btn:hover{color:#0e0e0e;transform:rotate(1deg)}
-.grid{display:grid;gap:1rem;margin-top:1rem}
-.card{border:2px solid var(--text);padding:1.1rem 1.2rem;background:#171717}
-.card p{color:var(--muted)}
-.feature{border:3px solid var(--pink);padding:1.3rem;background:#171717;box-shadow:8px 8px 0 var(--yellow)}
-.tag{display:inline-block;background:var(--yellow);color:#0e0e0e;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;transform:rotate(-2deg);margin-bottom:.6rem}
-.stripes{height:18px;margin:1.25rem 0;background:linear-gradient(#6ae0fb 0 33.3%,#ea4592 33.3% 66.6%,#f4b443 66.6%)}
-ul.list{margin:.5rem 0 1rem 1.2rem}ul.list li{margin:.35rem 0}
-.prose p{margin:.75rem 0}
-.prose h2{margin-top:2rem}
-footer{border-top:3px solid var(--pink);padding:1.5rem 0;color:var(--muted);font-size:.9rem;margin-top:2rem}
-@media(min-width:40rem){.grid.three{grid-template-columns:repeat(3,1fr)}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Punk House Digital","url":"https://punkhousedigital.co.uk/","email":"hello@punkhousedigital.co.uk","description":"AI-powered web design and SEO. A web design business where AI does most of the work, documented in public.","serviceType":["Web design","SEO"]}</script></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punk House Digital | AI-Powered Web Design &amp; SEO</title>
+    <meta name="description" content="Building websites with AI. Documenting the experiment of running a web design business where AI does most of the work.">
+    <link rel="canonical" href="https://punkhousedigital.co.uk/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Punk House Digital">
+    <meta property="og:title" content="Punk House Digital | AI-Powered Web Design &amp; SEO">
+    <meta property="og:description" content="Building websites with AI. Documenting the experiment of running a web design business where AI does most of the work.">
+    <meta property="og:url" content="https://punkhousedigital.co.uk/">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Punk House Digital","url":"https://punkhousedigital.co.uk/","email":"hello@punkhousedigital.co.uk","description":"AI-powered web design and SEO. A web design business where AI does most of the work, documented in public.","serviceType":["Web design","SEO"]}</script>
+</head>
 <body>
-<header class="top"><div class="wrap"><a class="logo" href="index.html">Punk House <span>Digital</span></a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="blog.html">Blog</a><a href="portfolio.html">Portfolio</a><a href="index.html#contact">Contact</a></nav></div></header>
-<main>
-<section class="hero"><div class="wrap">
-  <h1>Building websites <em>with AI</em></h1>
-  <p class="lead">An experiment in running a web design business where AI does most of the work. Transparent. Documented. Real.</p>
-  <a class="btn" href="portfolio.html">View portfolio</a><a class="btn alt" href="blog.html">Read the blog</a>
-  <div class="stripes" role="presentation"></div>
-</div></section>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">PUNK HOUSE DIGITAL</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<section><div class="wrap">
-  <div class="feature">
-    <span class="tag">Latest project</span>
-    <h2>Muddyworks bike workshop</h2>
-    <p>A custom website for a new bike repair and hire business in Hastings, built with AI. Fast, local-SEO ready and unmistakably 80s. It scores 100 across the board on mobile PageSpeed.</p>
-    <a class="btn alt" href="muddyworks-case-study.html">Read the case study</a>
-  </div>
-</div></section>
+    <section class="hero">
+        <div class="container">
+            <h1>Building Websites With AI</h1>
+            <p>An experiment in running a web design business where AI does most of the work. Transparent. Documented. Real.</p>
+            <div class="cta-buttons">
+                <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                <a href="blog.html" class="btn btn-secondary">Read the Blog</a>
+            </div>
+        </div>
+    </section>
 
-<section><div class="wrap">
-  <h2>What I build</h2>
-  <div class="grid three">
-    <div class="card"><h3>Custom websites</h3><p>Modern, responsive websites built with AI assistance, from concept to deployment.</p></div>
-    <div class="card"><h3>Premium design</h3><p>Designs that look like they cost thousands, without the price tag.</p></div>
-    <div class="card"><h3>SEO optimisation</h3><p>Websites that actually get found on Google. Proper structure, keywords, the lot.</p></div>
-  </div>
-</div></section>
+    <section id="latest-project">
+        <div class="container">
+            <h2 class="section-title">Latest Project</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">🚲</div>
+                    <div class="portfolio-content">
+                        <h3>Muddyworks Bike Workshop</h3>
+                        <p>A custom website for a new bike repair and hire business in Hastings, built with AI. Fast, local-SEO ready and unmistakably 80s, with mobile PageSpeed scores of 100.</p>
+                        <div class="blog-tags"><span class="tag">Local SEO</span><span class="tag">Service Business</span><span class="tag">Case Study</span></div>
+                        <div style="margin-top: 1rem;"><a href="muddyworks-case-study.html" class="portfolio-link">Read the case study →</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section><div class="wrap prose">
-  <h2>The experiment</h2>
-  <p>This is a business experiment. Can you make a living building websites with AI doing most of the heavy lifting? I'm documenting the whole journey.</p>
-  <p>Every project, challenge and lesson gets written up on the blog. Full transparency. No BS.</p>
-  <a class="btn" href="blog.html">Read the blog</a>
-</div></section>
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">What I Build</h2>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">🌐</div><h3>Custom Websites</h3><p>Modern, responsive websites built with AI assistance. From concept to deployment.</p></div>
+                <div class="service-card"><div class="service-icon">🎨</div><h3>Premium Design</h3><p>High-end designs that look like they cost thousands. Actually affordable.</p></div>
+                <div class="service-card"><div class="service-icon">🔍</div><h3>SEO Optimization</h3><p>Websites that actually get found on Google. Proper structure, keywords, everything.</p></div>
+            </div>
+        </div>
+    </section>
 
-<section id="contact"><div class="wrap">
-  <h2>Let's work together</h2>
-  <p class="lead">Need a website? Want to see if AI-assisted development is right for your project?</p>
-  <a class="btn" href="mailto:hello@punkhousedigital.co.uk">Get in touch</a>
-</div></section>
-</main>
-<footer><div class="wrap">&copy; 2026 Punk House Digital. An AI-powered web design experiment.</div></footer>
+    <section id="blog-preview" class="blog-grid">
+        <div class="container">
+            <h2 class="section-title">Latest From the Blog</h2>
+            <div id="latest-posts" class="posts-grid"></div>
+        </div>
+    </section>
+
+    <section id="experiment">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 class="section-title">The Experiment</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1rem;">This is a business experiment. Can you make a living building websites with AI doing most of the heavy lifting? I'm documenting the whole journey.</p>
+            <p style="font-size: 1.2rem;">Every project, every challenge, every lesson learned gets documented on the blog. Full transparency. No BS.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Need a website? Want to see if AI-assisted development is right for your project?</p>
+            <div class="cta-buttons"><a href="mailto:hello@punkhousedigital.co.uk" class="btn btn-primary">Get In Touch</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Punk House Digital. An AI-powered web design experiment.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

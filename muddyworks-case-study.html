@@ -1,86 +1,70 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muddyworks Case Study: Bike Workshop Website | Punk House Digital</title>
-<meta name="description" content="How I built a fast, local-SEO-ready website with AI for a Hastings bike workshop. Real work, real process.">
-<link rel="canonical" href="https://punkhousedigital.co.uk/muddyworks-case-study.html">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_GB">
-<meta property="og:site_name" content="Punk House Digital">
-<meta property="og:title" content="Muddyworks Case Study: Bike Workshop Website | Punk House Digital">
-<meta property="og:description" content="How I built a fast, local-SEO-ready website with AI for a Hastings bike workshop. Real work, real process.">
-<meta property="og:url" content="https://punkhousedigital.co.uk/muddyworks-case-study.html">
-<meta name="theme-color" content="#0e0e0e">
-<style>*{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#0e0e0e;--text:#f5f1e8;--pink:#ff2e88;--yellow:#ffe14d;--muted:#bdb7a8;--line:#2a2a2a}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font:1.05rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
-a{color:var(--yellow)}a:hover{color:var(--pink)}
-.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
-header.top{border-bottom:3px solid var(--pink);padding:1rem 0}
-header.top .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;align-items:center;justify-content:space-between}
-.logo{font:900 1.15rem/1 Impact,"Arial Black",system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--text);text-decoration:none}
-.logo span{color:var(--pink)}
-nav a{color:var(--text);text-decoration:none;margin-right:1.1rem;font-weight:600}
-nav a:last-child{margin-right:0}nav a:hover,nav a[aria-current]{color:var(--pink)}
-h1,h2,h3{font-family:Impact,"Arial Black",system-ui,sans-serif;text-transform:uppercase;line-height:1.05;letter-spacing:.02em}
-h1{font-size:clamp(2.4rem,9vw,4rem);margin:.5rem 0 1rem}
-h2{font-size:1.8rem;margin:0 0 .75rem;color:var(--yellow)}
-h3{font-size:1.25rem;margin-bottom:.4rem}
-section{padding:2.5rem 0}
-.hero{padding:3rem 0 2.5rem}
-.hero h1 em{color:var(--pink);font-style:normal}
-.lead{font-size:1.2rem;color:var(--muted);max-width:34rem}
-.btn{display:inline-block;margin:1.25rem .75rem 0 0;padding:.7rem 1.2rem;background:var(--pink);color:#0e0e0e;font-weight:800;text-decoration:none;text-transform:uppercase;border:3px solid var(--text);box-shadow:5px 5px 0 var(--yellow);transform:rotate(-1deg)}
-.btn.alt{background:var(--yellow)}.btn:hover{color:#0e0e0e;transform:rotate(1deg)}
-.grid{display:grid;gap:1rem;margin-top:1rem}
-.card{border:2px solid var(--text);padding:1.1rem 1.2rem;background:#171717}
-.card p{color:var(--muted)}
-.feature{border:3px solid var(--pink);padding:1.3rem;background:#171717;box-shadow:8px 8px 0 var(--yellow)}
-.tag{display:inline-block;background:var(--yellow);color:#0e0e0e;font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;transform:rotate(-2deg);margin-bottom:.6rem}
-.stripes{height:18px;margin:1.25rem 0;background:linear-gradient(#6ae0fb 0 33.3%,#ea4592 33.3% 66.6%,#f4b443 66.6%)}
-ul.list{margin:.5rem 0 1rem 1.2rem}ul.list li{margin:.35rem 0}
-.prose p{margin:.75rem 0}
-.prose h2{margin-top:2rem}
-footer{border-top:3px solid var(--pink);padding:1.5rem 0;color:var(--muted);font-size:.9rem;margin-top:2rem}
-@media(min-width:40rem){.grid.three{grid-template-columns:repeat(3,1fr)}}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Muddyworks: a website for a Hastings bike workshop","datePublished":"2026-11-12","dateModified":"2026-11-12","author":{"@type":"Person","name":"Adam"},"publisher":{"@type":"Organization","name":"Punk House Digital","url":"https://punkhousedigital.co.uk/"},"mainEntityOfPage":"https://punkhousedigital.co.uk/muddyworks-case-study.html","description":"How a fast, local-SEO-ready website was built with AI for a Hastings bike workshop."}</script></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muddyworks Case Study: Bike Workshop Website | Punk House Digital</title>
+    <meta name="description" content="How I built a fast, local-SEO-ready website with AI for a Hastings bike workshop. Real work, real process.">
+    <link rel="canonical" href="https://punkhousedigital.co.uk/muddyworks-case-study.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:site_name" content="Punk House Digital">
+    <meta property="og:title" content="Muddyworks Case Study: Bike Workshop Website | Punk House Digital">
+    <meta property="og:description" content="How I built a fast, local-SEO-ready website with AI for a Hastings bike workshop. Real work, real process.">
+    <meta property="og:url" content="https://punkhousedigital.co.uk/muddyworks-case-study.html">
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Muddyworks: a website for a Hastings bike workshop","datePublished":"2026-11-12","dateModified":"2026-11-12","author":{"@type":"Person","name":"Adam"},"publisher":{"@type":"Organization","name":"Punk House Digital","url":"https://punkhousedigital.co.uk/"},"mainEntityOfPage":"https://punkhousedigital.co.uk/muddyworks-case-study.html","description":"How a fast, local-SEO-ready website was built with AI for a Hastings bike workshop."}</script><style>.case{max-width:46rem;margin:0 auto}.case h2{font-size:1.6rem;margin:2rem 0 .75rem;color:var(--primary)}.case p,.case li{font-size:1.1rem;margin-bottom:.75rem}.case ul{margin:0 0 1rem 1.25rem}.case a{color:var(--secondary)}</style>
+</head>
 <body>
-<header class="top"><div class="wrap"><a class="logo" href="index.html">Punk House <span>Digital</span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="portfolio.html" aria-current="page">Portfolio</a><a href="index.html#contact">Contact</a></nav></div></header>
-<main>
-<section class="hero"><div class="wrap">
-  <span class="tag">Case study</span>
-  <h1>Muddyworks: a website for a Hastings bike workshop</h1>
-  <p class="lead">A custom, fast, local-SEO-ready site for a new bike repair and hire business, built with AI. Real work, warts included.</p>
-  <div class="stripes" role="presentation"></div>
-</div></section>
-<section><div class="wrap prose">
-  <h2>The job</h2>
-  <p>Muddyworks is a new bike repair and hire business in Hastings, East Sussex, covering Hastings, Bexhill and Battle. The owner wanted a site that looked like the business (80s racing stripes, no off-the-shelf template) and could actually get found by locals searching for a bike mechanic.</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">PUNK HOUSE DIGITAL</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-  <h2>What I built</h2>
-  <ul class="list">
-    <li>A custom static site: home, services, puncture repair, gear and brake adjustment, bike hire, blog, About and Contact</li>
-    <li>Local SEO from the start: structured data, area-specific copy, titles and descriptions for every page, and a sitemap</li>
-    <li>Mobile PageSpeed scores of 100 for performance, accessibility, best practices and SEO</li>
-    <li>Free hosting on GitHub Pages, with updates live in seconds</li>
-  </ul>
+    <section class="page-header">
+        <div class="container">
+            <h1>Muddyworks: A Website for a Hastings Bike Workshop</h1>
+            <p>A custom, fast, local-SEO-ready site for a new bike repair and hire business, built with AI.</p>
+        </div>
+    </section>
 
-  <h2>How it went</h2>
-  <p>It took plenty of back and forth. The first version launched with an introductory price, and the owner then decided to charge normal market rates, so the pricing and every page that mentioned it changed. The illustrated hero was swapped for a real photo of the workshop, because a real photo builds more trust than a drawing. And I held off on a pile of town-by-town pages until each one had something real to say, since thin copy-and-paste location pages tend to do more harm than good.</p>
+    <section>
+        <div class="container case">
+            <h2>The job</h2>
+            <p>Muddyworks is a new bike repair and hire business in Hastings, East Sussex, covering Hastings, Bexhill and Battle. The owner wanted a site that looked like the business (80s racing stripes, no off-the-shelf template) and could actually get found by locals searching for a bike mechanic.</p>
 
-  <h2>Early results</h2>
-  <p>It's early days. In November 2026, within weeks of launch, the site was showing in Google's natural results for "bike mechanic Hastings" in a private browser window. I'll update this page as there's more data from Search Console.</p>
+            <h2>What I built</h2>
+            <ul>
+                <li>A custom static site: home, services, puncture repair, gear and brake adjustment, bike hire, blog, About and Contact</li>
+                <li>Local SEO from the start: structured data, area-specific copy, titles and descriptions for every page, and a sitemap</li>
+                <li>Mobile PageSpeed scores of 100 for performance, accessibility, best practices and SEO</li>
+                <li>Free hosting, with updates live in seconds</li>
+            </ul>
 
-  <h2>See it live</h2>
-  <p>Have a look at the finished site: <a href="https://muddyworks.co.uk">Muddyworks bike workshop</a>.</p>
+            <h2>How it went</h2>
+            <p>It took plenty of back and forth. The first version launched with an introductory price, and the owner then decided to charge normal market rates, so the pricing and every page that mentioned it changed. The illustrated hero was swapped for a real photo of the workshop, because a real photo builds more trust than a drawing. And I held off on a pile of town-by-town pages until each one had something real to say, since thin copy-and-paste location pages tend to do more harm than good.</p>
 
-  <h2>Want something similar?</h2>
-  <a class="btn" href="mailto:hello@punkhousedigital.co.uk">Get in touch</a>
-</div></section>
-</main>
-<footer><div class="wrap">&copy; 2026 Punk House Digital. An AI-powered web design experiment.</div></footer>
+            <h2>Early results</h2>
+            <p>It's early days. In November 2026, within weeks of launch, the site was showing in Google's natural results for "bike mechanic Hastings" in a private browser window. I'll update this page as there's more data from Search Console.</p>
+
+            <h2>See it live</h2>
+            <p>Have a look at the finished site: <a href="https://muddyworks.co.uk">Muddyworks bike workshop</a>.</p>
+
+            <div class="cta-buttons" style="justify-content:flex-start;margin-top:2rem"><a href="mailto:hello@punkhousedigital.co.uk" class="btn btn-primary">Want something similar? Get in touch</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Punk House Digital. An AI-powered web design experiment.</p>
+        </div>
+    </footer>
 </body>
 </html>
